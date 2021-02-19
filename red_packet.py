@@ -5,15 +5,20 @@ from appium.webdriver.common.touch_action import TouchAction
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
+platformVersion = input('系统版本号（platformVersion）:')
+deviceName = input('设备名称(deviceName)：')
+
+
 desired_caps = {
     "platformName": "Android",  # 系统
-    "platformVersion": "10.0",  # 系统版本号
-    "deviceName": "b68548ed",  # 设备名
+    "platformVersion": platformVersion,  # 系统版本号
+    "deviceName": deviceName,  # 设备名
     "appPackage": "com.tencent.mm",  # 包名
     "appActivity": ".ui.LauncherUI",  # app 启动时主 Activity
     'unicodeKeyboard': True,  # 使用自带输入法
     'noReset': True  # 保留 session 信息，可以避免重新登录
 }
+
 
 # 判断元素是否存在
 
