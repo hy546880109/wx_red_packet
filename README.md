@@ -13,5 +13,5 @@ desired_caps = {
     'noReset': True  # 保留 session 信息，可以避免重新登录
 }
 实现思路：
-https://img2020.cnblogs.com/blog/1510016/202102/1510016-20210210113946506-1400512179.png
+https://github.com/hy546880109/wx_red_packet/blob/main/1510016-20210210113946506-1400512179.png
 
